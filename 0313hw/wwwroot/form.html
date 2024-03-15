@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            margin: 50px;
+            font-family: 'Comic Sans MS';
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            padding: 30px;
+            color: darkslateblue;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform:translate(-50%);
+            background-color:lavender;
+            border-radius:10px;
+        }
+        h3{
+            text-align:center;
+            font-size:40px;
+        }
+        .button{
+            border:none;
+            background-color:lightslategrey;
+            font-size:20px;
+            padding:10px 20px;
+            color:white;
+            border-radius:10px;
+            margin-top:20px;
+        }
+        input{
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrap">
+        <h3>Invitation</h3>
+        <form method="post" action="/thanks.html">
+            <div>
+                <label>Name</label>
+                <input name="name" />
+            </div>
+            <div>
+                <label>Email</label>
+                <input email="email" />
+            </div>
+            <div>
+                <label>Phone Number</label>
+                <input phone="phone" />
+            </div>
+            <div>
+                <input class="button" type="submit" value="Send" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
